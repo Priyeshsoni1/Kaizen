@@ -11,7 +11,7 @@ const CaseReviewCard = () => {
       {/* Card Content */}
       <div className="relative z-10 flex flex-row gap-6">
         {/* Left Section */}
-        <div className="flex bg-[rgba(244,238,232,0.8)] flex-col gap-40 justify-between p-4 lg:p-8 text-left w-full lg:w-1/2 rounded-md border-white">
+        <div className="flex bg-[rgba(244,238,232,0.8)] flex-col gap-40 justify-between p-4 lg:p-8 text-left w-full lg:w-1/2 rounded-3xl border-white">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
               Free
