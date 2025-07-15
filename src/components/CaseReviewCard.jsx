@@ -9,14 +9,14 @@ const CaseReviewCard = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full bg-gradient-to-br from-[#4b2e6d]/30 via-[#3d3e7f]/30 to-[#29406d]/30 filter blur-3xl opacity-70 z-0" />
 
       {/* Card Content */}
-      <div className="relative z-10 flex flex-col lg:flex-row gap-6">
+      <div className="relative z-10 flex flex-row gap-6">
         {/* Left Section */}
-        <div className="flex flex-col justify-between p-4 lg:p-8 text-left w-full lg:w-1/2">
+        <div className="flex bg-[rgba(244,238,232,0.8)] flex-col gap-40 justify-between p-4 lg:p-8 text-left w-full lg:w-1/2 rounded-md border-white">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
               Free
             </h2>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-600 leading-tight mt-1">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-600 leading-tight m-4">
               Case
             </h2>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-600 leading-tight">
@@ -24,7 +24,7 @@ const CaseReviewCard = () => {
             </h2>
           </div>
 
-          <ul className="space-y-4 mt-6 mb-4">
+          <ul className="space-y-4 mt-12 mb-4">
             <li className="flex items-center text-gray-700 text-sm">
               <span className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3">
                 <FaShieldAlt className="h-4 w-4 text-blue-600" />
@@ -55,8 +55,12 @@ const CaseReviewCard = () => {
           </p>
 
           {/* Circular Banner */}
-          <div className="flex justify-center">
-            <div className="w-40 h-40 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-[#4b2e6d] via-[#3d3e7f] to-[#29406d] flex items-center justify-center relative">
+          {/* GRANDPARENT */}
+
+          {/* PARENT (takes 50% width) */}
+          <div className="w-1/2">
+            {/* CHILD (your target content) */}
+            <div className="w-40 h-40 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-[#4b2e6d] via-[#3d3e7f] to-[#29406d] flex items-center justify-center relative mx-auto">
               <svg className="absolute w-full h-full" viewBox="0 0 100 100">
                 <path
                   id="circlePath"
@@ -79,12 +83,12 @@ const CaseReviewCard = () => {
           </div>
 
           {/* Buttons */}
-          <div className="flex flex-row-reverse flex-wrap gap-3 mt-8 justify-center lg:justify-end">
-            <button className="bg-[#C9A576] text-white px-3 py-2 rounded-full text-sm font-semibold hover:bg-[#b58e5c] transition">
-              &gt;
-            </button>
+          <div className="flex flex-row flex-wrap gap-0 mt-8 justify-center lg:justify-end">
             <button className="bg-[#C9A576] text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-[#b58e5c] transition">
               Contact us
+            </button>{" "}
+            <button className="bg-[#C9A576] text-white px-3 py-2 rounded-full text-sm font-semibold hover:bg-[#b58e5c] transition">
+              &gt;
             </button>
           </div>
         </div>
